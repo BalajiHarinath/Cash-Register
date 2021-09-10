@@ -1,0 +1,63 @@
+body{
+    margin: 0 20vw;
+
+}
+.app{
+    background-color: cornsilk; 
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100;
+}
+
+h1{
+    text-align: left;
+    color: purple ;
+}
+
+p{
+    font-size: 20px;
+}
+
+label{
+    font-size: 20px;
+    padding: 0.5rem;
+    font-weight: bolder;
+}
+
+input{
+    margin-bottom: 2rem;
+    height:2rem;
+    border-radius: 0.5rem;
+    border-style: solid;
+    border-color: purple;
+    width: 20vw;
+}
+
+button{
+    width: 15vw;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    border-color: white;
+    color: white;
+    border-style: none;
+    background-color: purple;
+}
+
+table{
+    border-collapse: collapse;
+    width: 50vw;
+    margin-bottom: 20px;
+}
+
+table caption{
+    padding: 1.5rem;
+    font-size: large;
+    font-weight: bold;
+}
+table tr, td{
+    border: 2px solid purple;
+    text-align: center;
+    padding: 2.5px;
+    height: 35px;
+}
