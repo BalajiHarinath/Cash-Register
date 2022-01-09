@@ -10,20 +10,20 @@ const notes = [2000, 500, 100, 50, 20, 10, 1];
 
 divConditional.style.display = "none";
 
-function showMessage(msg){
+const showMessage = msg => {
     message.style.display = "block";
     message.innerText = msg;
 }
 
-function clickHandler(){
+const clickHandler = () => {
     
     message.style.display = "none";
     if(billAmount.value > 0){
         if(Number(cashGiven.value) >= Number(billAmount.value)){
             divConditional.style.display = "block";
-            var changeToBeReturned = cashGiven.value-billAmount.value;
+            let changeToBeReturned = cashGiven.value-billAmount.value;
             for(let i=0; i<notes.length; i++){
-                var numberOfNotes = Math.trunc(changeToBeReturned/notes[i]);
+                const numberOfNotes = Math.trunc(changeToBeReturned/notes[i]);
                 changeToBeReturned%=notes[i];
                 numNotes[i].innerText = numberOfNotes;
             }
